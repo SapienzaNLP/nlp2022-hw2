@@ -138,7 +138,7 @@ class StudentModel(Model):
     # MANDATORY to load the weights that can handle the given language
     # possible languages: ["EN", "FR", "ES"]
     # REMINDER: EN is mandatory the others are extras
-    def __int__(self, language: str):
+    def __init__(self, language: str):
         # load the specific model for the input language
         self.language = language
 
